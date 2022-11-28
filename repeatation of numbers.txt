@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i,j,k;
+    int l=0;
+    cout<<"Enter number of array ";
+    cin>>i;
+    
+    cout<<"enter arrays ";
+    int n[i];
+    for(int j=0;j<i;j++)
+    cin>>n[j];
+     for(k=0;k<i;k++)
+ for(int j=k;j<i;j++)
+   if(n[k] == n[j+1])
+      { 
+          cout<<"Number is repeated";
+          return 0;
+      }
+     cout<<"Number is not repeated";
+    return 0;
+}
